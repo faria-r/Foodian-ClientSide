@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './Router/Routes.jsx'
-
+import '@smastrom/react-rating/style.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <div className='max-w-screen-lg mx-auto'>
