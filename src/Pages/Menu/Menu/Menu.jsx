@@ -1,13 +1,12 @@
 import React from 'react';
 import { useTitle } from '../../../Hooks/useTitle/useTitle';
-
+import Cover from '../../Shared/Cover/Cover';
+import menuImg from '../../../assets/menu/banner3.jpg'
 const Menu = () => {
-useTitle('Menu')
+useTitle('Rio | Menu')
     return (
         <div>
-            <h3>
-                This is Menu Page
-            </h3>
+            <Cover  bgimg={menuImg} TitleName={"Our Menu"} details={'Would you like to try a dish?'}></Cover>
         </div>
     );
 };
