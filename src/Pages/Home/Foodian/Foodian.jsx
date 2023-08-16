@@ -5,9 +5,11 @@ const Foodian = () => {
         <div style={
             {backgroundImage: `url(${background})`,
             backgroundRepeat:'no-repeat',
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+          backgroundPosition:'center'
+          
             
-            }} className='h-[60vh] p-16'>
+            }} className='h-[70vh] p-24 my-16 bg-fixed '>
             <div className='bg-white text-black p-10 w-3/4 h-auto mx-auto'>
                 <h2 className='text-4xl font-[Cinzel] text-center'>Cafe Rio</h2>
                 <p className='text-justify'>

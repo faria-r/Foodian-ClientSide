@@ -36,7 +36,7 @@ const Testimonials = () => {
                 />
                 <BiSolidQuoteLeft className="text-6xl  font-bold"></BiSolidQuoteLeft>
                 <p>{item.details}</p>
-                <p className="text-golden text-2xl ">{item.name}</p>
+                <p className="text-golden text-2xl uppercase">{item.name}</p>
               </div>
             </SwiperSlide>
           ))}
