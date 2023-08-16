@@ -7,8 +7,10 @@ import Call from './Contact/Call';
 import FeaturedItem from './FeaturedItem/FeaturedItem';
 import FromMenu from './FromMenu/FromMenu';
 import Testimonials from './Testimonials/Testimonials';
+import { useTitle } from '../../../Hooks/useTitle/useTitle';
 
 const Home = () => {
+    useTitle('Cafe Rio -Home')
     return (
         <div>
             <Banner></Banner>
