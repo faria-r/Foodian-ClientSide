@@ -23,7 +23,7 @@ const Cover = ({ TitleName, details, bgimg }) => {
       )}
     >
       <div>
-        <div className="hero h-[90vh] p-16" TitleName={TitleName} details={details}>
+        <div className="hero h-[90vh] p-16">
           <div className=""></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
