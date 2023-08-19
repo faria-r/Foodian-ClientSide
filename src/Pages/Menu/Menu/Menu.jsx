@@ -9,16 +9,14 @@ import dessertImg from '../../../assets/menu/dessert-bg.jpeg';
 import pizzaImg from '../../../assets/menu/pizza-bg.jpg';
 import saladImg from '../../../assets/menu/salad-bg.jpg';
 import soupImg from '../../../assets/menu/soup-bg.jpg';
+import { useCategory } from '../../../Hooks/UseCategory/useCategory';
 
 const Menu = () => {
 useTitle('Rio | Menu');
 const [menu] = useMenu('menu.json');
 
-const desserts = menu.filter(item => item.category === 'dessert');
-const pizzas = menu.filter(item => item.category === 'pizza');
-const salads = menu.filter(item => item.category === 'salad');
-const soups = menu.filter(item => item.category === 'soup');
-const offer = menu.filter(item => item.category === 'offered');
+const [desserts,pizzas,salads,soups,drinks,offer] = useCategory();
+console.log(offer)
 const dessertDetails = desserts?.find( item => item.category === 'dessert');
 const pizzaDetails = pizzas?.find( item => item.category === 'pizza');
 const saladDetails = salads?.find( item => item.category === 'salad');
