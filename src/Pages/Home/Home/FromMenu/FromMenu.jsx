@@ -1,10 +1,10 @@
 import React from "react";
 import SectionTitle from "../../../../Components/SectionTitle/SectionTitle";
 import img from "../../../../assets/home/featured.jpg";
-import style from '../FromMenu/Styles.css'
+import  '../FromMenu/Styles.css'
 const FromMenu = () => {
   return (
-    <div className="featuredImg bg-fixed min-w-full my-16 p-4 ">
+    <div className="featuredImg min-w-full my-16 p-4 ">
       <div className="mt-16">
         <SectionTitle
           heading={"FROM OUR MENU"}
