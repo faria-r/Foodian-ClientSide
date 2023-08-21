@@ -6,8 +6,9 @@ import { useState } from "react";
 import { useCategory } from "../../../Hooks/UseCategory/useCategory";
 import FeaturedMenu from "../../Home/Home/FeaturedItem/FeaturedMenu";
 import { useTitle } from "../../../Hooks/useTitle/useTitle";
+import OrderTab from "../OrderTab/OrderTab";
 const Order = () => {
-  useTitle('Order')
+  useTitle("Order");
   const [tabIndex, setTabIndex] = useState(0);
   const [desserts, pizzas, salads, soups, drinks] = useCategory();
   console.log(desserts);
@@ -19,7 +20,7 @@ const Order = () => {
         bgimg={coverImg}
       ></Cover>
       <div>
-        <Tabs 
+        <Tabs
           selectedIndex={tabIndex}
           onSelect={(index) => {
             setTabIndex(index);
@@ -35,59 +36,19 @@ const Order = () => {
           </TabList>
 
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 ">
-              {salads.map((menu) => (
-                <FeaturedMenu
-                  key={menu._id}
-                  img={menu.image}
-                  menu={menu}
-                ></FeaturedMenu>
-              ))}
-            </div>
+            <OrderTab menuType={salads}></OrderTab>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 ">
-              {desserts.map((menu) => (
-                <FeaturedMenu
-                  key={menu._id}
-                  img={menu.image}
-                  menu={menu}
-                ></FeaturedMenu>
-              ))}
-            </div>
+            <OrderTab menuType={desserts}></OrderTab>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 ">
-              {pizzas.map((menu) => (
-                <FeaturedMenu
-                  key={menu._id}
-                  img={menu.image}
-                  menu={menu}
-                ></FeaturedMenu>
-              ))}
-            </div>
+            <OrderTab menuType={pizzas}></OrderTab>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 ">
-              {soups.map((menu) => (
-                <FeaturedMenu
-                  key={menu._id}
-                  img={menu.image}
-                  menu={menu}
-                ></FeaturedMenu>
-              ))}
-            </div>
+            <OrderTab menuType={soups}></OrderTab>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2">
-              {drinks.map((menu) => (
-                <FeaturedMenu
-                  key={menu._id}
-                  img={menu.image}
-                  menu={menu}
-                ></FeaturedMenu>
-              ))}
-            </div>
+            <OrderTab menuType={drinks}></OrderTab>
           </TabPanel>
         </Tabs>
       </div>
