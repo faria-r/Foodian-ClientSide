@@ -12,7 +12,7 @@ import soupImg from '../../../assets/menu/soup-bg.jpg';
 import { useCategory } from '../../../Hooks/UseCategory/useCategory';
 
 const Menu = () => {
-useTitle('Rio | Menu');
+useTitle('Menu');
 const [menu] = useMenu('menu.json');
 const [desserts,pizzas,salads,soups,drinks,offer] = useCategory();
 console.log(offer)

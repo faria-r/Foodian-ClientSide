@@ -5,7 +5,9 @@ import "react-tabs/style/react-tabs.css";
 import { useState } from "react";
 import { useCategory } from "../../../Hooks/UseCategory/useCategory";
 import FeaturedMenu from "../../Home/Home/FeaturedItem/FeaturedMenu";
+import { useTitle } from "../../../Hooks/useTitle/useTitle";
 const Order = () => {
+  useTitle('Order')
   const [tabIndex, setTabIndex] = useState(0);
   const [desserts, pizzas, salads, soups, drinks] = useCategory();
   console.log(desserts);

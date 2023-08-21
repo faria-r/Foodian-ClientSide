@@ -10,7 +10,7 @@ import Testimonials from './Testimonials/Testimonials';
 import { useTitle } from '../../../Hooks/useTitle/useTitle';
 
 const Home = () => {
-    useTitle('Cafe Rio-Home')
+    useTitle('Home')
     return (
         <div>
             <Banner></Banner>
