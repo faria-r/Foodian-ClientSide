@@ -4,7 +4,7 @@ const FeaturedMenu = ({ menu,img }) => {
   const { name, about } = menu;
   return (
     <div className=" my-6">
-      <div className="w-[85%] mx-auto  shadow-xl">
+      <div className="w-[85%] mx-auto h-96  shadow-xl">
         <div className="h-1/2 ">
           <img src={img} alt="" className="h-48 w-full" />
         </div>

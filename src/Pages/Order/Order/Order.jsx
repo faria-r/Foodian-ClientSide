@@ -17,23 +17,23 @@ const Order = () => {
         bgimg={coverImg}
       ></Cover>
       <div>
-        <Tabs
+        <Tabs 
           selectedIndex={tabIndex}
           onSelect={(index) => {
             setTabIndex(index);
             console.log(tabIndex);
           }}
         >
-          <TabList>
+          <TabList className="hover:text-golden font-bold text-xl my-8 boder-none  border-b-2 border-b-golden text-center">
             <Tab tabIndex>Salads</Tab>
-            <Tab>Salads</Tab>
+            <Tab>Desserts</Tab>
             <Tab>Pizzas</Tab>
             <Tab>Soups</Tab>
             <Tab>Drinks</Tab>
           </TabList>
 
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 bg-golden">
+            <div className="grid grid-cols-3 gap-2 ">
               {salads.map((menu) => (
                 <FeaturedMenu
                   key={menu._id}
@@ -44,8 +44,8 @@ const Order = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 bg-golden">
-              {salads.map((menu) => (
+            <div className="grid grid-cols-3 gap-2 ">
+              {desserts.map((menu) => (
                 <FeaturedMenu
                   key={menu._id}
                   img={menu.image}
@@ -55,8 +55,8 @@ const Order = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 bg-golden">
-              {salads.map((menu) => (
+            <div className="grid grid-cols-3 gap-2 ">
+              {pizzas.map((menu) => (
                 <FeaturedMenu
                   key={menu._id}
                   img={menu.image}
@@ -66,8 +66,8 @@ const Order = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 bg-golden">
-              {salads.map((menu) => (
+            <div className="grid grid-cols-3 gap-2 ">
+              {soups.map((menu) => (
                 <FeaturedMenu
                   key={menu._id}
                   img={menu.image}
@@ -77,8 +77,8 @@ const Order = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-3 gap-2 bg-golden">
-              {salads.map((menu) => (
+            <div className="grid grid-cols-3 gap-2">
+              {drinks.map((menu) => (
                 <FeaturedMenu
                   key={menu._id}
                   img={menu.image}
