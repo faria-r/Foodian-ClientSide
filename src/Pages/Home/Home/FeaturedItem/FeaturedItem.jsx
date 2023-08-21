@@ -16,7 +16,7 @@ const FeaturedItem = () => {
             </div>
            <div className='grid grid-cols-1 md:grid-cols-3 gap-1'>
             {
-                featureMenu.map(menu => <FeaturedMenu key={menu._id} menu={menu}></FeaturedMenu>)
+                featureMenu.map(menu => <FeaturedMenu key={menu._id} img={menu.picture} menu={menu}></FeaturedMenu>)
             }
            </div>
         </div>
