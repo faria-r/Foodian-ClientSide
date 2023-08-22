@@ -36,12 +36,12 @@ const Category = () => {
         className="mySwiper my-8"
       >
         <SwiperSlide><img src={slide1}/>
-        <h3 className="text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Salads</h3>
+        <h3 className=" lg:text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Salads</h3>
         </SwiperSlide>
-        <SwiperSlide><img src={slide2}/> <h3 className="text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase"> Pizzas</h3></SwiperSlide>
-        <SwiperSlide><img src={slide3}/> <h3 className="text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Soups</h3></SwiperSlide>
-        <SwiperSlide><img src={slide4}/> <h3 className="text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Dessert</h3></SwiperSlide>
-        <SwiperSlide><img src={slide5}/> <h3 className="text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Salads</h3></SwiperSlide>
+        <SwiperSlide><img src={slide2}/> <h3 className=" lg:text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase"> Pizzas</h3></SwiperSlide>
+        <SwiperSlide><img src={slide3}/> <h3 className=" lg:text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Soups</h3></SwiperSlide>
+        <SwiperSlide><img src={slide4}/> <h3 className=" lg:text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Dessert</h3></SwiperSlide>
+        <SwiperSlide><img src={slide5}/> <h3 className=" lg:text-4xl text-white shadow font-[Cinzel] -mt-16 text-center uppercase">Salads</h3></SwiperSlide>
       </Swiper>
     </div>
   );

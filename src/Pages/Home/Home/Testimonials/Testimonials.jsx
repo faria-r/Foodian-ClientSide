@@ -24,19 +24,21 @@ const Testimonials = () => {
         ></SectionTitle>
       </div>
       <div>
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
           {reveiw.map((item) => (
             <SwiperSlide key={item._id} item={item}>
-              <div className="text-center my-8 p-8 mx-24 flex flex-col items-center ">
+              <div className="text-center my-8 p-8 lg:mx-24 flex flex-col items-center ">
                 <Rating
                   className="py-4"
                   style={{ maxWidth: 250 }}
                   value={item.rating}
                   readOnly
                 />
-                <BiSolidQuoteLeft className="text-6xl  font-bold"></BiSolidQuoteLeft>
-                <p>{item.details}</p>
-                <p className="text-golden text-2xl uppercase">{item.name}</p>
+                <BiSolidQuoteLeft className="text-2xl g:text-6xl  font-bold"></BiSolidQuoteLeft>
+              <div className="p-4"> 
+              <p className="text-justify ">{item.details}</p>
+                <p className="text-golden my-2 lg:text-2xl uppercase">{item.name}</p>
+              </div>
               </div>
             </SwiperSlide>
           ))}

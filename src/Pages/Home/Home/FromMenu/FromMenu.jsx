@@ -11,12 +11,12 @@ const FromMenu = () => {
           subHeading={"Check it out"}
         ></SectionTitle>
       </div>
-      <div className="md:flex justify-center items-center px-16 py-6 mt-8 mb-6 mx-auto">
+      <div className="md:flex justify-center items-center lg:px-16 py-6 mt-8 mb-6 mx-auto">
         <div >
-          <img src={img} className="w-3/4" />
+          <img src={img} className="lg:w-3/4 sm:mb-6 lg:mb-1" />
         </div>
         <div className=" md:-ml-10 w-auto">
-          <p>
+          <p className="text-justify">
             March 20, 2023 <br />
             <span> WHERE CAN I GET SOME?</span> <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error

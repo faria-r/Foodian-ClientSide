@@ -9,8 +9,8 @@ const Foodian = () => {
           backgroundPosition:'center'
           
             
-            }} className='h-[70vh] p-24 my-16 bg-fixed '>
-            <div className='bg-white text-black p-10 w-3/4 h-auto mx-auto'>
+            }} className='lg:h-[70vh] p-8 lg:p-24 my-16 bg-fixed bg-cover'>
+            <div className='bg-white text-black p-10 w-auto lg:w-3/4 h-auto mx-auto'>
                 <h2 className='text-4xl font-[Cinzel] text-center'>Cafe Rio</h2>
                 <p className='text-justify'>
                 Welcome to Cafe Rio, where every moment is a savory delight. Begin your day with artisanal coffees and cozy chai. Enjoy lunch with our hearty paninis, or savor dinner's tender steaks and fresh salads. Treat yourself to our exquisite éclairs and luscious chocolate tortes a taste of pure joy awaits
