@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Rating } from "@smastrom/react-rating";
 import {BiSolidQuoteLeft} from 'react-icons/bi'
 // Import Swiper styles
-import "swiper/css";
+import "swiper/css"; 
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const Testimonials = () => {
@@ -34,7 +34,7 @@ const Testimonials = () => {
                   value={item.rating}
                   readOnly
                 />
-                <BiSolidQuoteLeft className="text-2xl g:text-6xl  font-bold"></BiSolidQuoteLeft>
+                <BiSolidQuoteLeft className="text-2xl lg:text-6xl  font-bold"></BiSolidQuoteLeft>
               <div className="p-4"> 
               <p className="text-justify ">{item.details}</p>
                 <p className="text-golden my-2 lg:text-2xl uppercase">{item.name}</p>
